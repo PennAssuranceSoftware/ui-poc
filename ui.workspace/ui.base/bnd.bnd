@@ -1,0 +1,12 @@
+-buildpath:  \
+	../cnf/plugins/org.apache.felix.dependencymanager.annotation-3.2.0.jar;version=file,\
+	org.apache.felix.dependencymanager,\
+	osgi.core,\
+	org.amdatu.web.rest.jaxrs,\
+	org.amdatu.web.rest.doc,\
+	javax.servlet,\
+	com.fasterxml.jackson.core.jackson-annotations,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind
+Private-Package:  \
+	demo
