@@ -27,7 +27,8 @@
 	org.apache.felix.eventadmin,\
 	org.apache.felix.configadmin,\
 	org.apache.felix.log,\
-	ui.base;version=latest
+	ui.base;version=latest,\
+	org.amdatu.web.resourcehandler
 
 -runrequires:\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
