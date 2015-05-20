@@ -16,3 +16,4 @@ Include-Resource: \
 X-Web-Resource-Version: 1.1
 X-Web-Resource: /ui;static
 X-Web-Resource-Default-Page: index.html
+Bundle-Version: 1.00.00.${tstamp}
