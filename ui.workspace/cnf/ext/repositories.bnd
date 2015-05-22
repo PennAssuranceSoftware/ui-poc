@@ -3,6 +3,14 @@
 	aQute.bnd.deployer.repository.FixedIndexedRepo;        name=Amdatu Dependencies; locations=http://repository.amdatu.org/dependencies/index.xml.gz,\
 	aQute.bnd.deployer.repository.FixedIndexedRepo;        name=Amdatu Snapshots;    locations=http://repository.amdatu.org/snapshot/index.xml.gz,\
 	aQute.bnd.deployer.repository.FixedIndexedRepo;        name=Amdatu Release;      locations=http://repository.amdatu.org/release/index.xml.gz,\
-	aQute.lib.deployer.FileRepo;                           name=Build;               location=${workspace}/cnf/buildrepo
+    aQute.bnd.deployer.repository.FixedIndexedRepo;        name=Bndtools Hub;        locations=https://raw.githubusercontent.com/bndtools/bundle-hub/master/index.xml.gz,\
+	aQute.lib.deployer.FileRepo;                           name=Build;               location=${workspace}/cnf/buildrepo,\
+	aQute.bnd.deployer.obr.NexusOBR;                       name=Snapshots;           repositoryUrl=http://repo3.pennassurancesoftware.com/content/repositories/osgi-snapshots; username=deployment; password=deploy123
+	
+	# ,\
+	# aQute.bnd.deployer.repository.LocalIndexedRepo;        name=Penn Assurance Software Releases(Local); local=${workspace}/../../pas-repository/release,\
+    # aQute.bnd.deployer.repository.LocalIndexedRepo;        name=Penn Assurance Software Snapshots(Local); local=${workspace}/../../pas-repository/snapshot
 
--releaserepo: Build
+
+
+-releaserepo: Snapshots
