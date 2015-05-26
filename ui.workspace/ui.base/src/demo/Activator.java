@@ -16,6 +16,7 @@ public class Activator extends DependencyActivatorBase {
 	public void init(BundleContext arg0, DependencyManager dm) throws Exception {
 
 		Properties properties = new Properties();
+		// TODO: This should be configured somewhere or there should be configuration somewhere else the filter reads to figure out what to filter not to
 		properties.put("pattern", "/demo/*.*");
 		dm.add(createComponent()
 				.setInterface(Filter.class.getName(), properties)

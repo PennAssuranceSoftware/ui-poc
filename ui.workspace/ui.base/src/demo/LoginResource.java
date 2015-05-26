@@ -50,11 +50,11 @@ public class LoginResource {
 		}
 	}
 
-	// TODO: Need actual login logic to verify credentials
 	@POST
 	@Consumes("application/json")
 	public Response login(Credentials credentials)
 			throws TokenProviderException {
+		// TODO: Need actual login logic to verify credentials
 		final SortedMap<String, String> userMap = new TreeMap<>();
 		userMap.put(TokenProvider.USERNAME, credentials.getId());
 		userMap.put("password", credentials.getPassword());

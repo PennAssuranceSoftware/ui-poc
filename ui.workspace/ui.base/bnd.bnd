@@ -14,9 +14,12 @@
 Private-Package:  \
 	demo
 Include-Resource: \
-    static=static
+    static=static, \
+    ui=ui
 X-Web-Resource-Version: 1.1
-X-Web-Resource: /static;static
+X-Web-Resource: \
+    /static;static, \
+    /;ui
 X-Web-Resource-Default-Page: index.html
 Bundle-Version: 1.00.00.${tstamp}
 Bundle-Activator: demo.Activator

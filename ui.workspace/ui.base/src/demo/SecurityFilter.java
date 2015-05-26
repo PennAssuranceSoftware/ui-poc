@@ -46,13 +46,13 @@ public class SecurityFilter implements Filter {
 			}
 			else {
 				final HttpServletResponse httpResponse = (HttpServletResponse) response;
-				httpResponse.sendRedirect("/static/login.html");
+				httpResponse.sendRedirect("/login.html");
 			}
 		} catch (InvalidTokenException exception) {
 			log("Failed verify token: " + token);
 			// Redirect
 			final HttpServletResponse httpResponse = (HttpServletResponse) response;
-			httpResponse.sendRedirect("/static/login.html");
+			httpResponse.sendRedirect("/login.html");
 			// TODO: This should be configured somewhere
 		} catch (TokenProviderException exception) {
 			// TODO: handle exception
