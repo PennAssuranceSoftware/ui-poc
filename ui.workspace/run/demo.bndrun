@@ -28,8 +28,24 @@
 	org.apache.felix.configadmin,\
 	org.apache.felix.log,\
 	ui.base;version=latest,\
-	org.amdatu.web.resourcehandler
+	org.amdatu.web.resourcehandler,\
+	org.amdatu.security.tokenprovider.api,\
+	org.amdatu.security.tokenprovider.impl,\
+	org.amdatu.configurator.api,\
+	org.amdatu.configurator.autoconf,\
+	org.amdatu.configurator.properties,\
+	org.amdatu.configurator.shell,\
+	org.amdatu.testing.configurator
 
 -runrequires:\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)'
+
+-runproperties:  \
+	org.amdatu.configurator.loglevel=4,\
+	org.amdatu.configurator.autoconf.verbose=true,\
+	org.amdatu.configurator.autoconf.dir=${project}/conf,\
+	org.amdatu.configurator.autoconf.prefix=context.,\
+	org.amdatu.configurator.properties.verbose=true,\
+	org.amdatu.configurator.properties.dir=${project}/conf,\
+	org.amdatu.configurator.properties.prefix=
