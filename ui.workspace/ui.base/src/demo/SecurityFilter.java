@@ -1,8 +1,6 @@
 package demo;
 
 import java.io.IOException;
-import java.util.SortedMap;
-import java.util.TreeMap;
 
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -11,7 +9,9 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
+import org.amdatu.security.tokenprovider.InvalidTokenException;
 import org.amdatu.security.tokenprovider.TokenProvider;
 import org.amdatu.security.tokenprovider.TokenProviderException;
 import org.amdatu.security.tokenprovider.TokenUtil;
@@ -37,19 +37,26 @@ public class SecurityFilter implements Filter {
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		log("Filter: filter");
-
+		final String token = TokenUtil
+				.getTokenFromRequest((HttpServletRequest) request);
 		try {
-			// TODO: This code would be in web service to login
-			SortedMap<String, String> userMap = new TreeMap<>();
-			userMap.put(TokenProvider.USERNAME, "user-id1");
-			userMap.put("googletoken", "24234jklj2kljk234jkl");
-			String token = m_tokenProvider.generateToken(userMap);
-			log("Generated Token: " + token + " From Provider: "
-					+ m_tokenProvider.getClass());
-			log( "Existing Token: "  + TokenUtil.getTokenFromRequest((HttpServletRequest) request) );
+			log("Existing Token: " + token);
+			if (token != null) {
+				m_tokenProvider.verifyToken(token);
+			}
+			else {
+				final HttpServletResponse httpResponse = (HttpServletResponse) response;
+				httpResponse.sendRedirect("/static/login.html");
+			}
+		} catch (InvalidTokenException exception) {
+			log("Failed verify token: " + token);
+			// Redirect
+			final HttpServletResponse httpResponse = (HttpServletResponse) response;
+			httpResponse.sendRedirect("/static/login.html");
+			// TODO: This should be configured somewhere
 		} catch (TokenProviderException exception) {
-			log("Failed to generate token");
+			// TODO: handle exception
+			log("Failed verify token: " + token);
 		}
 
 		chain.doFilter(request, response);

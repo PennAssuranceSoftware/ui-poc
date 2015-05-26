@@ -16,7 +16,7 @@ public class Activator extends DependencyActivatorBase {
 	public void init(BundleContext arg0, DependencyManager dm) throws Exception {
 
 		Properties properties = new Properties();
-		properties.put("pattern", "/*.*");
+		properties.put("pattern", "/demo/*.*");
 		dm.add(createComponent()
 				.setInterface(Filter.class.getName(), properties)
 				.setImplementation(SecurityFilter.class)
