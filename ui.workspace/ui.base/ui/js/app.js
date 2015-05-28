@@ -96,15 +96,15 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/morris/morris.css',
-                            '/static/assets/admin/pages/css/tasks.css',
+                            '/static/metronic/assets/global/plugins/morris/morris.css',
+                            '/static/metronic/assets/admin/pages/css/tasks.css',
                             
-                            '/static/assets/global/plugins/morris/morris.min.js',
-                            '/static/assets/global/plugins/morris/raphael-min.js',
-                            '/static/assets/global/plugins/jquery.sparkline.min.js',
+                            '/static/metronic/assets/global/plugins/morris/morris.min.js',
+                            '/static/metronic/assets/global/plugins/morris/raphael-min.js',
+                            '/static/metronic/assets/global/plugins/jquery.sparkline.min.js',
 
-                            '/static/assets/admin/pages/scripts/index3.js',
-                            '/static/assets/admin/pages/scripts/tasks.js',
+                            '/static/metronic/assets/admin/pages/scripts/index3.js',
+                            '/static/metronic/assets/admin/pages/scripts/tasks.js',
 
                              'js/controllers/DashboardController.js'
                         ] 
@@ -124,7 +124,7 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                     return $ocLazyLoad.load([{
                         name: 'angularFileUpload',
                         files: [
-                            '/static/assets/global/plugins/angularjs/plugins/angular-file-upload/angular-file-upload.min.js',
+                            '/static/metronic/assets/global/plugins/angularjs/plugins/angular-file-upload/angular-file-upload.min.js',
                         ] 
                     }, {
                         name: 'MetronicApp',
@@ -148,8 +148,8 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'ui.select',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/angularjs/plugins/ui-select/select.min.css',
-                            '/static/assets/global/plugins/angularjs/plugins/ui-select/select.min.js'
+                            '/static/metronic/assets/global/plugins/angularjs/plugins/ui-select/select.min.css',
+                            '/static/metronic/assets/global/plugins/angularjs/plugins/ui-select/select.min.js'
                         ] 
                     }, {
                         name: 'MetronicApp',
@@ -191,10 +191,10 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/jstree/dist/themes/default/style.min.css',
+                            '/static/metronic/assets/global/plugins/jstree/dist/themes/default/style.min.css',
 
-                            '/static/assets/global/plugins/jstree/dist/jstree.min.js',
-                            '/static/assets/admin/pages/scripts/ui-tree.js',
+                            '/static/metronic/assets/global/plugins/jstree/dist/jstree.min.js',
+                            '/static/metronic/assets/admin/pages/scripts/ui-tree.js',
                             'js/controllers/GeneralPageController.js'
                         ] 
                     }]);
@@ -214,24 +214,24 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
-                            '/static/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
-                            '/static/assets/global/plugins/jquery-tags-input/jquery.tagsinput.css',
-                            '/static/assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css',
-                            '/static/assets/global/plugins/typeahead/typeahead.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
+                            '/static/metronic/assets/global/plugins/jquery-tags-input/jquery.tagsinput.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css',
+                            '/static/metronic/assets/global/plugins/typeahead/typeahead.css',
 
-                            '/static/assets/global/plugins/fuelux/js/spinner.min.js',
-                            '/static/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
-                            '/static/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js',
-                            '/static/assets/global/plugins/jquery.input-ip-address-control-1.0.min.js',
-                            '/static/assets/global/plugins/bootstrap-pwstrength/pwstrength-bootstrap.min.js',
-                            '/static/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js',
-                            '/static/assets/global/plugins/jquery-tags-input/jquery.tagsinput.min.js',
-                            '/static/assets/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js',
-                            '/static/assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js',
-                            '/static/assets/global/plugins/typeahead/handlebars.min.js',
-                            '/static/assets/global/plugins/typeahead/typeahead.bundle.min.js',
-                            '/static/assets/admin/pages/scripts/components-form-tools.js',
+                            '/static/metronic/assets/global/plugins/fuelux/js/spinner.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
+                            '/static/metronic/assets/global/plugins/jquery-inputmask/jquery.inputmask.bundle.min.js',
+                            '/static/metronic/assets/global/plugins/jquery.input-ip-address-control-1.0.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-pwstrength/pwstrength-bootstrap.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js',
+                            '/static/metronic/assets/global/plugins/jquery-tags-input/jquery.tagsinput.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js',
+                            '/static/metronic/assets/global/plugins/typeahead/handlebars.min.js',
+                            '/static/metronic/assets/global/plugins/typeahead/typeahead.bundle.min.js',
+                            '/static/metronic/assets/admin/pages/scripts/components-form-tools.js',
 
                             'js/controllers/GeneralPageController.js'
                         ] 
@@ -252,22 +252,22 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/clockface/css/clockface.css',
-                            '/static/assets/global/plugins/bootstrap-datepicker/css/datepicker3.css',
-                            '/static/assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css',
-                            '/static/assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css',
-                            '/static/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css',
-                            '/static/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css',
+                            '/static/metronic/assets/global/plugins/clockface/css/clockface.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-datepicker/css/datepicker3.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-colorpicker/css/colorpicker.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css',
 
-                            '/static/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                            '/static/assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js',
-                            '/static/assets/global/plugins/clockface/js/clockface.js',
-                            '/static/assets/global/plugins/bootstrap-daterangepicker/moment.min.js',
-                            '/static/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js',
-                            '/static/assets/global/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js',
-                            '/static/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js',
+                            '/static/metronic/assets/global/plugins/clockface/js/clockface.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-daterangepicker/moment.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js',
 
-                            '/static/assets/admin/pages/scripts/components-pickers.js',
+                            '/static/metronic/assets/admin/pages/scripts/components-pickers.js',
 
                             'js/controllers/GeneralPageController.js'
                         ] 
@@ -288,15 +288,15 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/bootstrap-select/bootstrap-select.min.css',
-                            '/static/assets/global/plugins/select2/select2.css',
-                            '/static/assets/global/plugins/jquery-multi-select/css/multi-select.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-select/bootstrap-select.min.css',
+                            '/static/metronic/assets/global/plugins/select2/select2.css',
+                            '/static/metronic/assets/global/plugins/jquery-multi-select/css/multi-select.css',
 
-                            '/static/assets/global/plugins/bootstrap-select/bootstrap-select.min.js',
-                            '/static/assets/global/plugins/select2/select2.min.js',
-                            '/static/assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-select/bootstrap-select.min.js',
+                            '/static/metronic/assets/global/plugins/select2/select2.min.js',
+                            '/static/metronic/assets/global/plugins/jquery-multi-select/js/jquery.multi-select.js',
 
-                            '/static/assets/admin/pages/scripts/components-dropdowns.js',
+                            '/static/metronic/assets/admin/pages/scripts/components-dropdowns.js',
 
                             'js/controllers/GeneralPageController.js'
                         ] 
@@ -317,13 +317,13 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/select2/select2.css',                             
-                            '/static/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css', 
-                            '/static/assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css',
-                            '/static/assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css',
+                            '/static/metronic/assets/global/plugins/select2/select2.css',                             
+                            '/static/metronic/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css', 
+                            '/static/metronic/assets/global/plugins/datatables/extensions/Scroller/css/dataTables.scroller.min.css',
+                            '/static/metronic/assets/global/plugins/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css',
 
-                            '/static/assets/global/plugins/select2/select2.min.js',
-                            '/static/assets/global/plugins/datatables/all.min.js',
+                            '/static/metronic/assets/global/plugins/select2/select2.min.js',
+                            '/static/metronic/assets/global/plugins/datatables/all.min.js',
                             'js/scripts/table-advanced.js',
 
                             'js/controllers/GeneralPageController.js'
@@ -345,15 +345,15 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/select2/select2.css',                             
-                            '/static/assets/global/plugins/bootstrap-datepicker/css/datepicker.css',
-                            '/static/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css',
+                            '/static/metronic/assets/global/plugins/select2/select2.css',                             
+                            '/static/metronic/assets/global/plugins/bootstrap-datepicker/css/datepicker.css',
+                            '/static/metronic/assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css',
 
-                            '/static/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                            '/static/assets/global/plugins/select2/select2.min.js',
-                            '/static/assets/global/plugins/datatables/all.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                            '/static/metronic/assets/global/plugins/select2/select2.min.js',
+                            '/static/metronic/assets/global/plugins/datatables/all.min.js',
 
-                            '/static/assets/global/scripts/datatable.js',
+                            '/static/metronic/assets/global/scripts/datatable.js',
                             'js/scripts/table-ajax.js',
 
                             'js/controllers/GeneralPageController.js'
@@ -375,14 +375,14 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',  
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
-                            '/static/assets/admin/pages/css/profile.css',
-                            '/static/assets/admin/pages/css/tasks.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
+                            '/static/metronic/assets/admin/pages/css/profile.css',
+                            '/static/metronic/assets/admin/pages/css/tasks.css',
                             
-                            '/static/assets/global/plugins/jquery.sparkline.min.js',
-                            '/static/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
+                            '/static/metronic/assets/global/plugins/jquery.sparkline.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
 
-                            '/static/assets/admin/pages/scripts/profile.js',
+                            '/static/metronic/assets/admin/pages/scripts/profile.js',
 
                             'js/controllers/UserProfileController.js'
                         ]                    
@@ -424,14 +424,14 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                         name: 'MetronicApp',  
                         insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
                         files: [
-                            '/static/assets/global/plugins/bootstrap-datepicker/css/datepicker3.css',
-                            '/static/assets/global/plugins/select2/select2.css',
-                            '/static/assets/admin/pages/css/todo.css',
+                            '/static/metronic/assets/global/plugins/bootstrap-datepicker/css/datepicker3.css',
+                            '/static/metronic/assets/global/plugins/select2/select2.css',
+                            '/static/metronic/assets/admin/pages/css/todo.css',
                             
-                            '/static/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
-                            '/static/assets/global/plugins/select2/select2.min.js',
+                            '/static/metronic/assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                            '/static/metronic/assets/global/plugins/select2/select2.min.js',
 
-                            '/static/assets/admin/pages/scripts/todo.js',
+                            '/static/metronic/assets/admin/pages/scripts/todo.js',
 
                             '/js/controllers/TodoController.js'  
                         ]                    

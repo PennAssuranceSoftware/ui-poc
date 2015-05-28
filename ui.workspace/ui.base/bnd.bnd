@@ -10,7 +10,8 @@
 	com.fasterxml.jackson.core.jackson-databind,\
 	org.amdatu.web.resourcehandler,\
 	osgi.cmpn,\
-	org.amdatu.security.tokenprovider.api;version='[1.0.2,2.0.0)'
+	org.amdatu.security.tokenprovider.api;version='[1.0.2,2.0.0)',\
+	com.pennassurancesoftware.web.resource.metronic;version=latest
 Private-Package:  \
 	demo
 Include-Resource: \

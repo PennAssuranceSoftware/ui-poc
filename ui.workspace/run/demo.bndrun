@@ -35,7 +35,8 @@
 	org.amdatu.configurator.autoconf,\
 	org.amdatu.configurator.properties,\
 	org.amdatu.configurator.shell,\
-	org.amdatu.testing.configurator
+	org.amdatu.testing.configurator,\
+	com.pennassurancesoftware.web.resource.metronic;version=latest
 
 -runrequires:\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
