@@ -136,6 +136,17 @@ Bootstrap Daterangepicker
   display: block;
 }
 
+.daterangepicker .ranges {
+  width: 170px;
+}
+.daterangepicker .ranges ul > li.active {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
 .daterangepicker .ranges .btn {
   margin-top: 10px;
 }
@@ -207,7 +218,7 @@ Bootstrap  Datetimepicker
 
 /* change z-index when opened in modal */
 .modal-open .datetimepicker {
-  z-index: 10055 !important;
+  z-index: 10055;
 }
 
 /***
@@ -606,6 +617,30 @@ Bootstrap Wizard
     text-align: left;
   }
 }
+/*!
+ * Tab drop for Bootstrap
+ */
+.tabbable-tabdrop .nav-tabs,
+.tabbable-tabdrop .nav-pills {
+  position: relative;
+}
+.tabbable-tabdrop .nav-tabs .caret,
+.tabbable-tabdrop .nav-pills .caret {
+  display: none;
+}
+.tabbable-tabdrop .nav-tabs .tabdrop .dropdown-toggle i,
+.tabbable-tabdrop .nav-pills .tabdrop .dropdown-toggle i {
+  font-size: 14px;
+}
+.tabbable-tabdrop .dropdown-menu:after {
+  right: 10px;
+  left: auto;
+}
+.tabbable-tabdrop .dropdown-menu:before {
+  right: 9px;
+  left: auto;
+}
+
 /***
 wysihtml5
 ***/
@@ -696,10 +731,139 @@ Error state for WYSIWYG Editors
 }
 
 /***
+Bootstrap GtreeTable
+***/
+.gtreetable .dropdown-menu {
+  margin-top: 0px;
+}
+.gtreetable .dropdown-menu:after, .gtreetable .dropdown-menu:before {
+  display: none !important;
+}
+.gtreetable .node-action .form-control {
+  position: relative;
+  top: 2px;
+  display: inline-block;
+}
+.gtreetable .node-icon-selected,
+.gtreetable .node-icon-handle,
+.gtreetable .node-icon-ce,
+.gtreetable .node-icon-type {
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ;
+}
+
+/***
 Bootbox
 ***/
 .bootbox .bootbox-close-button {
   margin-top: 0px !important;
+}
+
+/*--------------------------------------------------
+    [CSS Animation Amchart]
+----------------------------------------------------*/
+.CSSAnimationChart {
+  width: 100%;
+  height: 500px;
+}
+.CSSAnimationChart a {
+  color: #bbb !important;
+  font-size: 12px !important;
+}
+
+.amcharts-graph-g2 .amcharts-graph-stroke {
+  stroke-dasharray: 3px 3px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  -webkit-animation: am-moving-dashes 1s linear infinite;
+  animation: am-moving-dashes 1s linear infinite;
+}
+
+@-webkit-keyframes am-moving-dashes {
+  100% {
+    stroke-dashoffset: -31px;
+  }
+}
+@keyframes am-moving-dashes {
+  100% {
+    stroke-dashoffset: -31px;
+  }
+}
+.lastBullet {
+  -webkit-animation: am-pulsating 1s ease-out infinite;
+  animation: am-pulsating 1s ease-out infinite;
+}
+
+@-webkit-keyframes am-pulsating {
+  0% {
+    stroke-opacity: 1;
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-opacity: 0;
+    stroke-width: 50px;
+  }
+}
+@keyframes am-pulsating {
+  0% {
+    stroke-opacity: 1;
+    stroke-width: 0px;
+  }
+  100% {
+    stroke-opacity: 0;
+    stroke-width: 50px;
+  }
+}
+.amcharts-graph-column-front {
+  -webkit-transition: all .3s .3s ease-out;
+  transition: all .3s .3s ease-out;
+}
+
+.amcharts-graph-column-front:hover {
+  fill: #496375;
+  stroke: #496375;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.amcharts-graph-g3 {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 500%;
+  stroke-dasharray: 0 \0;
+  /* fixes IE prob */
+  stroke-dashoffset: 0 \0;
+  /* fixes IE prob */
+  -webkit-animation: am-draw 40s;
+  animation: am-draw 40s;
+}
+
+@-webkit-keyframes am-draw {
+  0% {
+    stroke-dashoffset: 500%;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes am-draw {
+  0% {
+    stroke-dashoffset: 500%;
+  }
+  100% {
+    stroke-dashoffset: 0px;
+  }
+}
+/*--------------------------------------------------
+    [Mao Amchart]
+----------------------------------------------------*/
+.mapChart {
+  width: 100%;
+  height: 500px;
+}
+.mapChart a {
+  color: #bbb !important;
+  font-size: 12px !important;
 }
 
 /***
@@ -1099,6 +1263,22 @@ Scroller Extension
 
 .dataTables_scrollBody {
   border-bottom: 1px solid #ddd !important;
+}
+
+.DTTT_Print_Info {
+  width: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -150px;
+  background: #eee;
+  padding: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.DTTT_Print_Info > h6 {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /***
@@ -2172,6 +2352,17 @@ Bootstrap input sizes
   background-position: 0 0px;
 }
 
+/* Portlet full screen mode */
+.modal-open.page-portlet-fullscreen .select2-drop-mask {
+  z-index: 10081;
+}
+.modal-open.page-portlet-fullscreen .select2-drop {
+  z-index: 10082;
+}
+.modal-open.page-portlet-fullscreen .select2-search {
+  z-index: 10083;
+}
+
 /***
 jQuery Uniform
 ***/
@@ -2272,22 +2463,22 @@ div[class*='iradio_'] {
   height: 20px;
   width: 20px;
   background: #000000;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ;
 }
 .icheck-colors > li:first-child {
   margin-left: 0;
 }
 .icheck-colors > li:hover {
-  opacity: 1;
-  filter: alpha(opacity=100);
+  opacity: 1 ;
+  filter: alpha(opacity=100) ;
   cursor: pointer;
 }
 .icheck-colors > li.active {
   height: 26px;
   margin-top: 0;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.6 ;
+  filter: alpha(opacity=60) ;
 }
 .icheck-colors > li.red {
   background: #d54e21;
@@ -2323,4 +2514,8 @@ AngularJS UI-select
 .ui-select-match-close {
   margin-top: 5px !important;
   margin-left: 5px !important;
+}
+
+.minicolors-swatch {
+  border: 0;
 }

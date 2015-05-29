@@ -58,6 +58,12 @@ var TableEditable = function () {
                 [5, 15, 20, -1],
                 [5, 15, 20, "All"] // change per page values here
             ],
+
+            // Or you can use remote translation file
+            //"language": {
+            //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+            //},
+
             // set the initial value
             "pageLength": 10,
 
@@ -79,7 +85,7 @@ var TableEditable = function () {
         var tableWrapper = $("#sample_editable_1_wrapper");
 
         tableWrapper.find(".dataTables_length select").select2({
-            showSearchInput: false //hide search box with special css class
+            showSearchInput: true //hide search box with special css class
         }); // initialize select2 dropdown
 
         var nEditing = null;

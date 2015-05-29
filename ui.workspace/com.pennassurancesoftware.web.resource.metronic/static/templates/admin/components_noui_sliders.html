@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.1
-Version: 3.6.1
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.4
+Version: 3.9.0
 Author: KeenThemes
 Website: http://www.keenthemes.com/
 Contact: support@keenthemes.com
@@ -33,7 +33,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <link href="../../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
 <!-- END GLOBAL MANDATORY STYLES -->
 <!-- BEGIN PAGE LEVEL STYLES -->
-<link href="../../assets/global/plugins/nouislider/jquery.nouislider.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/nouislider/jquery.nouislider.min.css" rel="stylesheet" type="text/css"/>
+<link href="../../assets/global/plugins/nouislider/jquery.nouislider.pips.min.css" rel="stylesheet" type="text/css"/>
 <!-- END PAGE LEVEL STYLES -->
 <!-- BEGIN THEME STYLES -->
 <link href="../../assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
@@ -80,7 +81,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN NOTIFICATION DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-bell"></i>
 					<span class="badge badge-default">
 					7 </span>
@@ -190,7 +191,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN INBOX DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-envelope-open"></i>
 					<span class="badge badge-default">
 					4 </span>
@@ -280,7 +281,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN TODO DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<i class="icon-calendar"></i>
 					<span class="badge badge-default">
 					3 </span>
@@ -377,7 +378,7 @@ License: You must have a valid license purchased only from themeforest(the above
 				<!-- BEGIN USER LOGIN DROPDOWN -->
 				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
 				<li class="dropdown dropdown-user">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 					<img alt="" class="img-circle" src="../../assets/admin/layout/img/avatar3_small.jpg"/>
 					<span class="username username-hide-on-mobile">
 					Nick </span>
@@ -669,6 +670,10 @@ License: You must have a valid license purchased only from themeforest(the above
 							Block UI</a>
 						</li>
 						<li>
+							<a href="ui_bootstrap_growl.html">
+							<span class="badge badge-roundless badge-warning">new</span>Bootstrap Growl Notifications</a>
+						</li>
+						<li>
 							<a href="ui_notific8.html">
 							Notific8 Notifications</a>
 						</li>
@@ -723,12 +728,20 @@ License: You must have a valid license purchased only from themeforest(the above
 							Date & Time Pickers</a>
 						</li>
 						<li>
+							<a href="components_context_menu.html">
+							Context Menu</a>
+						</li>
+						<li>
 							<a href="components_dropdowns.html">
 							Custom Dropdowns</a>
 						</li>
 						<li>
 							<a href="components_form_tools.html">
-							Form Tools</a>
+							Form Widgets & Tools</a>
+						</li>
+						<li>
+							<a href="components_form_tools2.html">
+							Form Widgets & Tools 2</a>
 						</li>
 						<li>
 							<a href="components_editors.html">
@@ -772,7 +785,13 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						<li>
+							<a href="form_controls_md.html">
+							<span class="badge badge-roundless badge-danger">new</span>Material Design<br>
+							Form Controls</a>
+						</li>
+						<li>
 							<a href="form_controls.html">
+							Bootstrap<br>
 							Form Controls</a>
 						</li>
 						<li>
@@ -819,6 +838,10 @@ License: You must have a valid license purchased only from themeforest(the above
 						<li>
 							<a href="table_basic.html">
 							Basic Datatables</a>
+						</li>
+						<li>
+							<a href="table_tree.html">
+							Tree Datatables</a>
 						</li>
 						<li>
 							<a href="table_responsive.html">
@@ -897,10 +920,13 @@ License: You must have a valid license purchased only from themeforest(the above
 					<ul class="sub-menu">
 						<li>
 							<a href="page_timeline.html">
-								<i class="icon-paper-plane"></i>
-								<span class="badge badge-warning">2</span>
-								New Timeline
-							</a>
+							<i class="icon-paper-plane"></i>
+							<span class="badge badge-warning">2</span>New Timeline</a>
+						</li>
+						<li>
+							<a href="extra_profile.html">
+							<i class="icon-user-following"></i>
+							<span class="badge badge-success badge-roundless">new</span>New User Profile</a>
 						</li>
 						<li>
 							<a href="page_todo.html">
@@ -913,16 +939,6 @@ License: You must have a valid license purchased only from themeforest(the above
 							<span class="badge badge-danger">4</span>Inbox</a>
 						</li>
 						<li>
-							<a href="extra_profile.html">
-							<i class="icon-user-following"></i>
-							<span class="badge badge-success badge-roundless">new</span>New User Profile</a>
-						</li>
-						<li>
-							<a href="extra_profile_old.html">
-							<i class="icon-user"></i>
-							Old User Profile</a>
-						</li>
-						<li>
 							<a href="extra_faq.html">
 							<i class="icon-question"></i>
 							FAQ</a>
@@ -931,11 +947,6 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="page_calendar.html">
 							<i class="icon-calendar"></i>
 							<span class="badge badge-danger">14</span>Calendar</a>
-						</li>
-						<li>
-							<a href="page_timeline_old.html">
-							<i class="icon-clock"></i>
-							<span class="badge badge-info">4</span>Old Timeline</a>
 						</li>
 						<li>
 							<a href="page_coming_soon.html">
@@ -961,6 +972,16 @@ License: You must have a valid license purchased only from themeforest(the above
 							<a href="page_news_item.html">
 							<i class="icon-bell"></i>
 							News View</a>
+						</li>
+						<li>
+							<a href="page_timeline_old.html">
+							<i class="icon-paper-plane"></i>
+							<span class="badge badge-warning">2</span>Old Timeline</a>
+						</li>
+						<li>
+							<a href="extra_profile_old.html">
+							<i class="icon-user"></i>
+							Old User Profile</a>
 						</li>
 					</ul>
 				</li>
@@ -1149,14 +1170,28 @@ License: You must have a valid license purchased only from themeforest(the above
 					</a>
 					<ul class="sub-menu">
 						<li>
+							<a href="email_template1/index.html">
+							New Email Template 1</a>
+						</li>
+						<li>
+							<a href="email_template2/index.html">
+							New Email Template 2</a>
+						</li>
+						<li>
+							<a href="email_template3/index.html">
+							New Email Template 3</a>
+						</li>
+						<li>
+							<a href="email_template4/index.html">
+							New Email Template 4</a>
+						</li>
+						<li>
 							<a href="email_newsletter.html">
-							Responsive Newsletter<br>
-							Email Template</a>
+							Old Email Template 1</a>
 						</li>
 						<li>
 							<a href="email_system.html">
-							Responsive System<br>
-							Email Template</a>
+							Old Email Template 2</a>
 						</li>
 					</ul>
 				</li>
@@ -1231,6 +1266,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<li class="color-light2 tooltips" data-style="light2" data-container="body" data-html="true" data-original-title="Light 2">
 							</li>
 						</ul>
+					</div>
+					<div class="theme-option">
+						<span>
+						Theme Style </span>
+						<select class="layout-style-option form-control input-sm">
+							<option value="square" selected="selected">Square corners</option>
+							<option value="rounded">Rounded corners</option>
+						</select>
 					</div>
 					<div class="theme-option">
 						<span>
@@ -1348,7 +1391,8 @@ License: You must have a valid license purchased only from themeforest(the above
 				<div class="col-md-12">
 					<div class="note note-success">
 						<p>
-							 To modify the slider size and colors, please go to <code>assets/css/plugins.css</code> and refer the code under <code>NoUI Range Sliders</code> code comment.
+							 To modify the slider size and colors, please go to <code>assets/css/plugins.css</code> and refer the code under <code>NoUI Range Sliders</code> code comment. <br>
+							 For more examples you can check the plugin's official <a href="http://refreshless.com/nouislider/examples/" target="_blank">home</a>
 						</p>
 					</div>
 					<!-- BEGIN PORTLET-->
@@ -1386,34 +1430,46 @@ License: You must have a valid license purchased only from themeforest(the above
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-3 control-label">Attach To Inputs</label>
+										<label class="col-md-3 control-label">Non linear slider</label>
 										<div class="col-md-4">
-											<div class="noUi-control noUi-danger" id="slider_2">
+											<div id="nonlinear">
 											</div>
-											<div class="input-group input-medium margin-top-20">
-												<input id="slider_2_input_start" type="text" class="form-control" name="from">
-												<span class="input-group-addon">
-												to </span>
-												<input id="slider_2_input_end" type="text" class="form-control" name="to">
+											<div class="well margin-top-20">
+												<span class="example-val" id="lower-value"></span><br>
+												<span id="lower-offset"></span><br>
+												<span class="example-val" id="upper-value"></span><br>
+												<span id="upper-offset"></span>
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-3 control-label">Disable Slider</label>
+										<label class="col-md-3 control-label">Locking sliders together</label>
 										<div class="col-md-4">
-											<div class="noUi-control noUi-warning" id="slider_3">
+											<div class="slider" id="slider1">
 											</div>
-											<label class="margin-top-10">
-											<input id="slider_3_checkbox" type="checkbox" value="1"> Disable! </label>
+											<span class="example-val" id="slider1-span"></span>
+											<div class="slider" id="slider2">
+											</div>
+											<span class="example-val" id="slider2-span"></span>
+											<a href="javascript:;" id="slider2-btn" class="btn btn-success" style="float:right;margin:20px 0 0">Lock</a>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Working with dates</label>
+										<div class="col-md-4">
+											<div id="slider-date">
+											</div>
+											<div class="well margin-top-20">
+												 From: <span class="example-val bold" id="event-start"></span><br>
+												 to: <span class="example-val bold" id="event-end"></span>
+											</div>
 										</div>
 									</div>
 									<div class="form-group last">
-										<label class="col-md-3 control-label">Reading Slider Value</label>
+										<label class="col-md-3 control-label">Soft limits</label>
 										<div class="col-md-4">
-											<div class="noUi-control noUi-default" id="slider_4">
+											<div id="soft" class="margin-bottom-40">
 											</div>
-											<a id="slider_4_btn" href="javascript:;" class="margin-top-10 btn blue btn-sm">
-											Read me! </a>
 										</div>
 									</div>
 								</div>
@@ -1453,7 +1509,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</a>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
 						More<i class="fa fa-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu pull-right" role="menu">
@@ -1616,7 +1672,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:15</span>
 											<span class="body">
 											When could you send me the report ? </span>
@@ -1626,7 +1682,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:15</span>
 											<span class="body">
 											Its almost done. I will be sending it shortly </span>
@@ -1636,7 +1692,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:15</span>
 											<span class="body">
 											Alright. Thanks! :) </span>
@@ -1646,7 +1702,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:16</span>
 											<span class="body">
 											You are most welcome. Sorry for the delay. </span>
@@ -1656,7 +1712,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:17</span>
 											<span class="body">
 											No probs. Just take your time :) </span>
@@ -1666,7 +1722,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:40</span>
 											<span class="body">
 											Alright. I just emailed it to you. </span>
@@ -1676,7 +1732,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:17</span>
 											<span class="body">
 											Great! Thanks. Will check it right away. </span>
@@ -1686,7 +1742,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar2.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Ella Wong</a>
+											<a href="javascript:;" class="name">Ella Wong</a>
 											<span class="datetime">20:40</span>
 											<span class="body">
 											Please let me know if you have any comment. </span>
@@ -1696,7 +1752,7 @@ License: You must have a valid license purchased only from themeforest(the above
 										<img class="avatar" alt="" src="../../assets/admin/layout/img/avatar3.jpg"/>
 										<div class="message">
 											<span class="arrow"></span>
-											<a href="#" class="name">Bob Nilson</a>
+											<a href="javascript:;" class="name">Bob Nilson</a>
 											<span class="datetime">20:17</span>
 											<span class="body">
 											Sure. I will check and buzz you if anything needs to be corrected. </span>
@@ -1742,7 +1798,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -1851,7 +1907,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -1900,7 +1956,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -2009,7 +2065,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</li>
 								<li>
-									<a href="#">
+									<a href="javascript:;">
 									<div class="col1">
 										<div class="cont">
 											<div class="cont-col1">
@@ -2092,7 +2148,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!-- BEGIN FOOTER -->
 <div class="page-footer">
 	<div class="page-footer-inner">
-		 2014 &copy; Metronic by keenthemes.
+		 2014 &copy; Metronic by keenthemes. <a href="http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes" title="Purchase Metronic just for 27$ and get lifetime updates for free" target="_blank">Purchase Metronic!</a>
 	</div>
 	<div class="scroll-to-top">
 		<i class="icon-arrow-up"></i>
@@ -2107,8 +2163,8 @@ License: You must have a valid license purchased only from themeforest(the above
 <![endif]-->
 <script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
-<script src="../../assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
 <script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
@@ -2118,7 +2174,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="../../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
 <!-- BEGIN PAGE LEVEL PLUGINS -->
-<script src="../../assets/global/plugins/nouislider/jquery.nouislider.min.js"></script>
+<script src="../../assets/global/plugins/nouislider/jquery.nouislider.all.js"></script>
 <!-- END PAGE LEVEL PLUGINS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>

@@ -22,6 +22,11 @@ var TableManaged = function () {
                 "zeroRecords": "No matching records found"
             },
 
+            // Or you can use remote translation file
+            //"language": {
+            //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+            //},
+
             // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
             // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js). 
             // So when dropdowns used the scrollable div should be removed. 

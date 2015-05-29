@@ -1,5 +1,3 @@
-
-
 var TableAdvanced = function () {
 
     var initTable1 = function () {
@@ -36,6 +34,11 @@ var TableAdvanced = function () {
                 "search": "Search:",
                 "zeroRecords": "No matching records found"
             },
+
+            // Or you can use remote translation file
+            //"language": {
+            //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+            //},
 
             "order": [
                 [0, 'asc']
@@ -374,7 +377,6 @@ var TableAdvanced = function () {
         /* Fixed header extension: http://datatables.net/extensions/keytable/ */
 
         var oTable = table.dataTable({
-
             // Internationalisation. For more info refer to http://datatables.net/manual/i18n
             "language": {
                 "aria": {
@@ -389,7 +391,6 @@ var TableAdvanced = function () {
                 "search": "Search:",
                 "zeroRecords": "No matching records found"
             },
-
             "order": [
                 [0, 'asc']
             ],

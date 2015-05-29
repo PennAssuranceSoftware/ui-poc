@@ -11,6 +11,9 @@ Body bg color
 body {
   background: #e9ecf3;
 }
+body.page-md {
+  background: #f3f5f9;
+}
 
 /*********** 
 Page Header
@@ -49,7 +52,7 @@ Page Header
   border-bottom-color: #dce1ec;
 }
 .page-header.navbar .top-menu .navbar-nav > li.separator {
-  background: darker(#f8f9fa, 5%);
+  background: #e9ecef;
 }
 .page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu {
   border: 1px solid #dce1ec;
@@ -159,7 +162,7 @@ Page Header
   border: 1px solid #ced6de;
 }
 .page-header.navbar .search-form .input-group:hover {
-  border-color: darker(#ced6de, 5%);
+  border-color: #bfcad4;
 }
 .page-header.navbar .search-form .input-group .form-control {
   color: #ced6de;
