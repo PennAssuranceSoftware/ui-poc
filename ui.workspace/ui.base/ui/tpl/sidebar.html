@@ -105,6 +105,14 @@
 			<span class="title">HTML Version</span>
 			</a>
 		</li>
+		
+		<li ng-repeat="extra in extras">
+			<a href="#{{extra.url}}">
+			<i class="icon-check"></i>
+			<span class="title">{{extra.display}}</span>
+			</a>
+		</li>
+		
 	</ul>
 	<!-- END SIDEBAR MENU -->
 </div>	

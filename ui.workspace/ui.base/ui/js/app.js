@@ -108,7 +108,9 @@ MetronicApp.controller('HeaderController', ['$scope', function($scope) {
 MetronicApp.controller('SidebarController', ['$scope', function($scope) {
     $scope.$on('$includeContentLoaded', function() {
         Layout.initSidebar(); // init sidebar
+        // $scope.extras = [{name: 'hello', display='Hello 1'}, {name: 'policy', display='Policy 23432423'}]
     });
+    $scope.extras = [{'url': '/p/24232332', 'display': 'Policy: 24232332'}];
 }]);
 
 /* Setup Layout Part - Sidebar */
@@ -126,10 +128,11 @@ MetronicApp.controller('FooterController', ['$scope', function($scope) {
 }]);
 
 /* Setup Rounting For All Pages */
-MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+MetronicApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // Redirect any unmatched url
-    $urlRouterProvider.otherwise("/dashboard.html");
+    $urlRouterProvider.otherwise("/file_upload.html");
+    $urlRouterProvider.when('/p/{id}', '/p/{id}/dashboard');
 
     $stateProvider
 
@@ -249,7 +252,56 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvi
                     }]);
                 }] 
             }
-        })     
+        }) 
+        
+        // Policy
+        .state('policy', {
+            url: "/p/:policyNumber",
+	        templateUrl: "views/policy/main.html",
+	        controller: "UserProfileController",
+            abstract: true,
+	        resolve: {
+	            deps: ['$ocLazyLoad', function($ocLazyLoad) {
+	                return $ocLazyLoad.load({
+	                    name: 'MetronicApp',  
+	                    insertBefore: '#ng_load_plugins_before', // load the above css files before '#ng_load_plugins_before'
+	                    files: [
+	                        '/static/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
+	                        '/static/metronic/assets/admin/pages/css/profile.css',
+	                        '/static/metronic/assets/admin/pages/css/tasks.css',
+	                        
+	                        '/static/metronic/assets/global/plugins/jquery.sparkline.min.js',
+	                        '/static/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js',
+	
+	                        '/static/metronic/assets/admin/pages/scripts/profile.js',
+	
+	                        'js/controllers/UserProfileController.js'
+	                    ]                    
+	                });
+	            }]
+	        }
+        })  
+        
+        // Policy Dashboard
+        .state("policy.dashboard", {
+            url: "/dashboard",
+            templateUrl: "views/policy/dashboard.html",
+            data: {pageTitle: 'Policy Overview', pageSubTitle: 'user profile dashboard sample'}
+        })
+
+        // Policy Account
+        .state("policy.account", {
+            url: "/account",
+            templateUrl: "views/policy/account.html",
+            data: {pageTitle: 'Policy Account', pageSubTitle: 'user profile account sample'}
+        })
+
+        // Policy Help
+        .state("policy.help", {
+            url: "/account",
+            templateUrl: "views/policy/help.html",
+            data: {pageTitle: 'Policy Help', pageSubTitle: 'user profile help sample'}      
+        })
 
         // Form Tools
         .state('formtools', {

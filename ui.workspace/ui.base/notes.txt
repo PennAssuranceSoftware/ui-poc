@@ -1,0 +1,42 @@
+Account View?
+  -- link multiple policies together
+
+Policy View
+  -- view contract values
+  -- link to owner details, insured details, etc.
+
+Money Handling View
+  -- Suspense
+
+Work Queues assigned to users?
+  -- Look at money that has been in suspense for a long time
+  -- Look at payments that have been "rejected"
+  -- Review transactions that need approval
+  
+Top and Side Menus
+  -- How are they controlled?  what "plugins" change/add to the menu
+  -- Should those menus be "context" sensitive?  or should each page have its own menu section to work with?
+     ** I'm leaning towards each page having its own...I think it's a little more user friendly
+
+Top
+  -- Notfications and Messages
+  -- Another other alerts like new reports available or approvals required
+  -- Search bar at the top; simple like Google Search
+  -- I'm thinking of hiding or removing the actions button; can't think of anything good to do with it
+
+Multiple things open...should the app allow for multiple things to be open...maybe only when doing something "new" like GMail...
+or keep it simple like GitHub...def need to be able to save work before complete  
+
+====================================================
+UI will have Views defined throughout the application
+UI will also have Controllers defined throughout the application
+   -- how do we add new controllers...how to extend existing controllers?
+   -- how do we add new views...how do we extends existing views?
+Modules can hold multiple controller definitions
+   -- Modules can depend on other modules
+Routes define the views and controllers to use
+  -- Use states instead of routes apparently
+
+
+Need a way to dynamically load JS that can add to the states, views, and controllers that are available
+
