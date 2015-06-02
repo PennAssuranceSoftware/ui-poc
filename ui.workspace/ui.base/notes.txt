@@ -40,3 +40,13 @@ Routes define the views and controllers to use
 
 Need a way to dynamically load JS that can add to the states, views, and controllers that are available
 
+
+
+Policy UI - Universal Life
+====================================================
+Policy Number, Account Number, Status
+Owner, Insured, Payor
+
+
+
+

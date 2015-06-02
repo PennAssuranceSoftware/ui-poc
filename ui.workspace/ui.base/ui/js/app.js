@@ -108,9 +108,8 @@ MetronicApp.controller('HeaderController', ['$scope', function($scope) {
 MetronicApp.controller('SidebarController', ['$scope', function($scope) {
     $scope.$on('$includeContentLoaded', function() {
         Layout.initSidebar(); // init sidebar
-        // $scope.extras = [{name: 'hello', display='Hello 1'}, {name: 'policy', display='Policy 23432423'}]
     });
-    $scope.extras = [{'url': '/p/24232332', 'display': 'Policy: 24232332'}];
+    $scope.extras = [{'url': '/p/24232332', 'display': 'Policy: 24232332', 'id': 'policy_' + '24232332'}];
 }]);
 
 /* Setup Layout Part - Sidebar */
@@ -131,7 +130,7 @@ MetronicApp.controller('FooterController', ['$scope', function($scope) {
 MetronicApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
 
     // Redirect any unmatched url
-    $urlRouterProvider.otherwise("/file_upload.html");
+    $urlRouterProvider.otherwise("/dashboard.html");
     $urlRouterProvider.when('/p/{id}', '/p/{id}/dashboard');
 
     $stateProvider
@@ -154,9 +153,13 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
                             '/static/metronic/assets/global/plugins/morris/morris.min.js',
                             '/static/metronic/assets/global/plugins/morris/raphael-min.js',
                             '/static/metronic/assets/global/plugins/jquery.sparkline.min.js',
+                            
+                            '/static/metronic/assets/global/plugins/bootstrap-gtreetable/bootstrap-gtreetable.min.css',
 
                             '/static/metronic/assets/admin/pages/scripts/index3.js',
                             '/static/metronic/assets/admin/pages/scripts/tasks.js',
+                            
+                            '/static/metronic/assets/global/plugins/bootstrap-gtreetable/bootstrap-gtreetable.min.js',
 
                              'js/controllers/DashboardController.js'
                         ] 
@@ -268,6 +271,7 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
 	                    files: [
 	                        '/static/metronic/assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css',
 	                        '/static/metronic/assets/admin/pages/css/profile.css',
+	                        '/static/metronic/assets/admin/pages/css/profile-old.css',
 	                        '/static/metronic/assets/admin/pages/css/tasks.css',
 	                        
 	                        '/static/metronic/assets/global/plugins/jquery.sparkline.min.js',
@@ -285,22 +289,22 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         // Policy Dashboard
         .state("policy.dashboard", {
             url: "/dashboard",
-            templateUrl: "views/policy/dashboard.html",
-            data: {pageTitle: 'Policy Overview', pageSubTitle: 'user profile dashboard sample'}
+            templateUrl: "views/policy/dashboard.html"
+            // data: {pageTitle: 'Policy Overview', pageSubTitle: 'user profile dashboard sample'}
         })
 
         // Policy Account
         .state("policy.account", {
             url: "/account",
             templateUrl: "views/policy/account.html",
-            data: {pageTitle: 'Policy Account', pageSubTitle: 'user profile account sample'}
+            // data: {pageTitle: 'Policy Account', pageSubTitle: 'user profile account sample'}
         })
 
         // Policy Help
         .state("policy.help", {
             url: "/account",
             templateUrl: "views/policy/help.html",
-            data: {pageTitle: 'Policy Help', pageSubTitle: 'user profile help sample'}      
+            // data: {pageTitle: 'Policy Help', pageSubTitle: 'user profile help sample'}      
         })
 
         // Form Tools
