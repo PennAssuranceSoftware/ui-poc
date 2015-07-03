@@ -294,10 +294,10 @@ MetronicApp.config(['$stateProvider', '$urlRouterProvider', '$locationProvider',
         })
 
         // Policy Account
-        .state("policy.account", {
-            url: "/account",
-            templateUrl: "views/policy/account.html",
-            // data: {pageTitle: 'Policy Account', pageSubTitle: 'user profile account sample'}
+        .state("policy.performance", {
+            url: "/performance",
+            templateUrl: "views/policy/performance.html",
+            // data: {pageTitle: 'Policy Account', pageSubTitle: 'performance'}
         })
 
         // Policy Help
